@@ -3,13 +3,15 @@
 get_header();
 
 if (have_posts()):
+    $i = 0;
     while (have_posts()) : the_post(); ?>
-    <div class="content">
+    
+    <div class="content cnt<?php echo $i; ?>">
         <h2><?php the_title(); ?></h2>
         <p><?php the_content(); ?></p>
     </div>
-
-<?php endwhile;
+    <?php $i = $i + 1;
+    endwhile;
 
     else:
         echo '<p>No content found </p>';
