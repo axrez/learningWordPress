@@ -6,7 +6,7 @@ if (have_posts()):
     $i = 0;
     while (have_posts()) : the_post(); ?>
     
-    <div class="content cnt<?php echo $i; ?>">
+    <div class="content" id="cnt<?php echo $i; ?>">
         <h2><?php the_title(); ?></h2>
         <p><?php the_content(); ?></p>
     </div>
@@ -20,5 +20,3 @@ if (have_posts()):
 get_footer();
 
 ?>
-
-

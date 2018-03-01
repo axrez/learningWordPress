@@ -6,6 +6,6 @@ jQuery('#landing-btn').click((event) => {
     jQuery('html, body').animate({ scrollTop: headerHeight }, 500);
 })
 
-jQuery('#menu-item-8').click((event) => {
+jQuery('#menu-item-28').click((event) => {
     jQuery('html, body').animate({ scrollTop: headerHeight }, 500);
 })

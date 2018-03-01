@@ -12,6 +12,7 @@ Version: 1.0
 html { 
     box-sizing: border-box;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -26,21 +27,23 @@ header {
     background: url('./public/landing.jpg');
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 200%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+    transform: translate(-50%, -0%);
 }
 
 .landing {
     color: #fff;
+    transform: translate(25%, -0%);
 }
 
 .landing > h1 {
     font-size: 3rem;
-    padding-bottom: 2%;
+    font-weight: 600;
+    padding-bottom: 0.8rem;
 }
 
 .landing > h5 {
@@ -75,6 +78,7 @@ nav {
     z-index: 1;
     background-color: #fff;
     margin-bottom: 5%;
+    
 }
 
 #menu-site-nav {
@@ -120,7 +124,7 @@ h2 {
 
 p {
     line-height: 1.65rem;
-    margin-top: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 
